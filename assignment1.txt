@@ -1,0 +1,72 @@
+void main(){
+  String name = "Daniyal Iftikhar";
+  String father_name= "Iftikhar Ahmed";
+  var roll_no = 15;
+  String uni_name="SSUET";
+  int max_marks = 100;
+  var total_marks = 500;
+ 
+  
+  print("Name        :    ${name}");
+  print("Father Name :    ${father_name}");
+  print("Roll No     :    ${roll_no} ");
+  print("University  :    ${uni_name} ");
+  
+  
+  print("S.NO     Subjects       Max Marks         Obtained Marks");
+  
+  int    pdc = 90;
+  double dsp = 80;
+  num    ccn =  85;
+  int    maths = 95;
+  num    phy = 90;
+  var obtain_marks= pdc+dsp+ccn+maths+phy;
+  
+  print("1        P&DC            ${max_marks}                 ${pdc}");
+  print("2        DSP             ${max_marks}                 ${dsp}");
+  print("3        CCN             ${max_marks}                 ${ccn}");
+  print("4        MATHS           ${max_marks}                 ${maths}");
+  print("5        PHYSICS         ${max_marks}                 ${phy}");
+  
+  print("                         ${total_marks}                ${obtain_marks}");
+   
+  var percentage =  (obtain_marks/total_marks)*100; 
+  
+  print("Your Percentage is:  ${percentage}");
+  
+  if(percentage >= 80 && percentage<=100)
+  {
+    print("Congratulations! You have A1 Grade");
+  }
+  
+  else if(percentage >= 70 && percentage<=79)
+  {
+    print("Congratulations! You have A Grade");
+  }
+  
+    else if(percentage >= 60 && percentage<=69)
+  {
+    print("You have B Grade");
+  }
+  
+    else if(percentage >= 50 && percentage<=59)
+  {
+    print("You have C Grade");
+  }
+  
+    else if(percentage >= 40 && percentage<=49)
+  {
+    print("You have D Grade");
+  }
+  
+    else if(percentage >= 33 && percentage<=39)
+  {
+    print("Congratulations! You have E Grade");
+  }
+  
+  else{
+    print("You failed!");
+  }
+  
+  
+}
